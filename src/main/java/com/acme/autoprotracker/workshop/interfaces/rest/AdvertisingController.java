@@ -1,14 +1,17 @@
 package com.acme.autoprotracker.workshop.interfaces.rest;
 
 import com.acme.autoprotracker.workshop.domain.model.commands.DeleteAdvertisingCommand;
-import com.acme.autoprotracker.workshop.domain.model.commands.DeleteProductCommand;
-import com.acme.autoprotracker.workshop.domain.model.queries.*;
+import com.acme.autoprotracker.workshop.domain.model.queries.GetAdvertisingByIdQuery;
+import com.acme.autoprotracker.workshop.domain.model.queries.GetAllAdvertisingQuery;
 import com.acme.autoprotracker.workshop.domain.services.AdvertisingCommandService;
 import com.acme.autoprotracker.workshop.domain.services.AdvertisingQueryService;
-import com.acme.autoprotracker.workshop.domain.services.ProductCommandService;
-import com.acme.autoprotracker.workshop.domain.services.ProductQueryService;
-import com.acme.autoprotracker.workshop.interfaces.rest.resources.*;
-import com.acme.autoprotracker.workshop.interfaces.rest.transform.*;
+import com.acme.autoprotracker.workshop.interfaces.rest.resources.AdvertisingResource;
+import com.acme.autoprotracker.workshop.interfaces.rest.resources.CreateAdvertisingResource;
+import com.acme.autoprotracker.workshop.interfaces.rest.resources.ProductResource;
+import com.acme.autoprotracker.workshop.interfaces.rest.resources.UpdateAdvertisingResource;
+import com.acme.autoprotracker.workshop.interfaces.rest.transform.AdvertisingResourceFromEntityAssembler;
+import com.acme.autoprotracker.workshop.interfaces.rest.transform.CreateAdvertisingCommandFromResourceAssembler;
+import com.acme.autoprotracker.workshop.interfaces.rest.transform.UpdateAdvertisingCommandFromResourceAssembler;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

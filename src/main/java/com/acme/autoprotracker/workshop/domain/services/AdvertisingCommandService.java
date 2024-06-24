@@ -1,8 +1,9 @@
 package com.acme.autoprotracker.workshop.domain.services;
 
 import com.acme.autoprotracker.workshop.domain.model.aggregates.Advertising;
-import com.acme.autoprotracker.workshop.domain.model.aggregates.Product;
-import com.acme.autoprotracker.workshop.domain.model.commands.*;
+import com.acme.autoprotracker.workshop.domain.model.commands.CreateAdvertisingCommand;
+import com.acme.autoprotracker.workshop.domain.model.commands.DeleteAdvertisingCommand;
+import com.acme.autoprotracker.workshop.domain.model.commands.UpdateAdvertisingCommand;
 
 import java.util.Optional;
 

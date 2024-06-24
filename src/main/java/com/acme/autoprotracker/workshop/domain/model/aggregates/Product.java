@@ -7,7 +7,6 @@ import org.apache.logging.log4j.util.Strings;
 import org.hibernate.validator.constraints.URL;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
 @Getter
 @Entity

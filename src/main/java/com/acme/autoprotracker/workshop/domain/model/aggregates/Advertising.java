@@ -1,13 +1,10 @@
 package com.acme.autoprotracker.workshop.domain.model.aggregates;
 
 import com.acme.autoprotracker.workshop.domain.model.commands.CreateAdvertisingCommand;
-import com.acme.autoprotracker.workshop.domain.model.commands.CreateProductCommand;
 import jakarta.persistence.*;
 import lombok.Getter;
 import org.apache.logging.log4j.util.Strings;
 import org.hibernate.validator.constraints.URL;
-
-import java.math.BigDecimal;
 
 @Getter
 @Entity

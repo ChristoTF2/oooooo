@@ -1,11 +1,11 @@
 package com.acme.autoprotracker.workshop.application.internal.commandservices;
 
 import com.acme.autoprotracker.workshop.domain.model.aggregates.Advertising;
-
-import com.acme.autoprotracker.workshop.domain.model.commands.*;
+import com.acme.autoprotracker.workshop.domain.model.commands.CreateAdvertisingCommand;
+import com.acme.autoprotracker.workshop.domain.model.commands.DeleteAdvertisingCommand;
+import com.acme.autoprotracker.workshop.domain.model.commands.UpdateAdvertisingCommand;
 import com.acme.autoprotracker.workshop.domain.services.AdvertisingCommandService;
 import com.acme.autoprotracker.workshop.infrastructure.persistence.jpa.repositories.AdvertisingRepository;
-
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
